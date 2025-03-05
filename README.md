@@ -1,2 +1,29 @@
-# binance-ui-flutter
-A Flutter app that consumes the Binance WebSockets API for Candlestick and Orderbooks.
+# Binance UI Flutter
+A Flutter application that replicates the Binance trading interface with real-time data integration.
+
+## Demo
+
+
+## Project Description
+Design the user interface provided below and consume the Binance WebSockets API for Candlestick and Orderbooks to create an interactive UI.
+
+## Features
+- Real-time price updates using WebSocket
+- Candlestick chart visualization
+- Order book integration
+- Dark/Light theme support
+
+## Tech Stack
+- Flutter
+- Provider(State Management)
+- Binance WebSocket API
+- Clean Architecture (MVVM)
+
+## Apk
+
+
+## Installation
+1. Clone the repository
+```bash
+git clone https://github.com/yourusername/binance-ui-flutter.git
+```
