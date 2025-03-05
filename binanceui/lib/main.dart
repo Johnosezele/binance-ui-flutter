@@ -4,9 +4,12 @@ import 'package:binanceui/presentation/features/home/home_screen_viewmodel.dart'
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_native_splash/flutter_native_splash.dart';
 
 void main() {
-  WidgetsFlutterBinding.ensureInitialized();
+  WidgetsBinding widgetsBinding = WidgetsFlutterBinding.ensureInitialized();
+  FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
+  
   runApp(MultiProvider(providers: [
     ChangeNotifierProvider(create: (_) => HomeScreenViewModel()),
     ChangeNotifierProvider(create: (_) => ThemeProvider())
@@ -19,6 +22,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    // Remove splash screen when the app is ready
+    FlutterNativeSplash.remove();
+    
     return ScreenUtilInit(
         designSize: const Size(390, 844),
         minTextAdapt: true,
