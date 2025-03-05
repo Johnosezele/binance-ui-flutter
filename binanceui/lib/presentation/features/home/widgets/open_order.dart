@@ -76,6 +76,8 @@ class _OpenOrderPageState extends State<OpenOrderPage>
                                           color: AppColors.lightGreyColor(
                                               context)),
                                       child: TabBar(
+                                        indicatorColor: Colors.transparent,
+                                        dividerColor: Colors.transparent,
                                         indicatorSize: TabBarIndicatorSize.tab,
                                         indicator: BoxDecoration(
                                             border: Border.all(
@@ -147,6 +149,17 @@ class _OpenOrderPageState extends State<OpenOrderPage>
                                                       const Icon(
                                                           Icons.info_outline,
                                                           size: 20),
+                                                      const Gap(200),
+                                                      Text(
+                                                        "0.00 USD",
+                                                        style: AppStyles
+                                                            .black12Medium
+                                                            .copyWith(
+                                                          color: AppColors
+                                                              .secondaryColor(
+                                                                  context),
+                                                        ),
+                                                      ),
                                                     ],
                                                   ),
                                                   suffix: const SizedBox()),
@@ -174,6 +187,17 @@ class _OpenOrderPageState extends State<OpenOrderPage>
                                                       const Icon(
                                                           Icons.info_outline,
                                                           size: 20),
+                                                      const Gap(210),
+                                                      Text(
+                                                        "0.00 USD",
+                                                        style: AppStyles
+                                                            .black12Medium
+                                                            .copyWith(
+                                                          color: AppColors
+                                                              .secondaryColor(
+                                                                  context),
+                                                        ),
+                                                      ),
                                                     ],
                                                   ),
                                                   suffix: const SizedBox()),
@@ -201,6 +225,17 @@ class _OpenOrderPageState extends State<OpenOrderPage>
                                                       const Icon(
                                                           Icons.info_outline,
                                                           size: 20),
+                                                      const Gap(190),
+                                                      Text(
+                                                        "Good till cancelled ⌄",
+                                                        style: AppStyles
+                                                            .black12Medium
+                                                            .copyWith(
+                                                          color: AppColors
+                                                              .secondaryColor(
+                                                                  context),
+                                                        ),
+                                                      ),
                                                     ],
                                                   ),
                                                   suffix: const SizedBox()),
@@ -360,7 +395,7 @@ class _OpenOrderPageState extends State<OpenOrderPage>
                                                                   .blueColor(
                                                                       context),
                                                           fixedSize:
-                                                              Size(80.w, 32.w)),
+                                                              Size(100.w, 40.h)),
                                                   child: Text(
                                                     "Deposit",
                                                     style: AppStyles

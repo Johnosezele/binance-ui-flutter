@@ -32,6 +32,7 @@ class MyApp extends StatelessWidget {
           return Consumer<ThemeProvider>(builder: (context, themeProvider, _) {
             return MaterialApp(
               title: 'Sisyphus',
+              debugShowCheckedModeBanner: false,
               theme: themeProvider.themeData,
               darkTheme: themeProvider.themeData,
               themeMode:
