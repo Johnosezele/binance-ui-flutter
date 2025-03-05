@@ -3,6 +3,7 @@ A Flutter application that replicates the Binance trading interface with real-ti
 
 ## Demo
 
+https://github.com/user-attachments/assets/d908f3ad-5c75-4b8e-8b29-cb96443fd3e0
 
 ## Project Description
 Design the user interface provided below and consume the Binance WebSockets API for Candlestick and Orderbooks to create an interactive UI.
@@ -20,7 +21,7 @@ Design the user interface provided below and consume the Binance WebSockets API 
 - Clean Architecture (MVVM)
 
 ## Apk
-
+https://drive.google.com/file/d/1HldUDbPBXhuJ7N8sA16CuPKXnOLwpZer/view?usp=sharing
 
 ## Installation
 1. Clone the repository
